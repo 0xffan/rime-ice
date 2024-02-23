@@ -1,0 +1,6 @@
+# Rime schema
+# encoding: utf-8
+
+# 小鹤双拼 custom
+patch:
+  translator/preedit_format: []            # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符

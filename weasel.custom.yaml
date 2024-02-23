@@ -1,0 +1,113 @@
+patch:
+  style/antialias_mode: default # 抗锯齿模式
+  style/blur_window: false
+  style/horizontal: true
+  style/inline_preedit: true
+  style/font_point: 14
+  style/label_font_point: 12
+  style/comment_font_point: 12
+  style/font_face:          "Segoe UI Emoji:20:39, Segoe UI Emoji:1f51f:1f51f, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, 霞鹜文楷, Microsoft Yahei, 宋体"
+  style/label_font_face:    "Segoe UI Emoji:20:39, Segoe UI Emoji:1f51f:1f51f, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, Microsoft Yahei, 宋体"
+  style/comment_font_face:  "Segoe UI Emoji:20:39, Segoe UI Emoji:1f51f:1f51f, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, Microsoft Yahei, 宋体"
+  # color_scheme settings
+  style/color_scheme: wechat_light
+  style/color_scheme_dark: wechat_dark
+  #layout settings
+  # style/layout/align_type: center
+  style/layout/border: 1
+  style/layout/min_height: 0
+  style/layout/spacing: 0
+  style/layout/candidate_spacing: 0
+  style/layout/shadow_radius: 13
+  style/layout/shadow_offset_x: 6
+  style/layout/shadow_offset_y: 6
+  style/layout/hilite_padding: 4 # 高亮显示间距
+  # style/layout/hilite_spacing: 15
+  style/layout/margin_x: 0 # 窗口左右边距
+  style/layout/margin_y: 0 # 窗口上下边距
+  style/layout/round_corner: 0 # 高亮圆角
+  style/layout/corner_radius: 4
+  # style/layout/max_width:  800
+  # style/layout/max_height: 600
+  # style/layout: layout: {border: 1, corner_radius: 5, hilite_padding: 5, hilite_spacing: 5, margin: 5, round_corner: 5}
+
+  style/use_argb_value: true
+  style/mark_text: "|"
+  style/capture_by_click: false
+
+  preset_color_schemes/+:
+    wechat_light:
+      name: 微信键盘浅色
+      back_color: 0xFFFFFF                      # 候选条背景色
+      border_color: 0xA3A3A3                    # 外边框颜色
+      border: 2                                 # 窗口外边框宽度
+      candidate_format: '%c %@ '  # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+      candidate_text_color: 0x3C3C3C            # 文字颜色
+      candidate_back_color: 0xFFFFFF            # 候选项底色
+      hilited_candidate_text_color: 0xFFFFFF    # 选中文字颜色
+      comment_text_color: 0x999999              # 注颜色
+      hilited_comment_text_color: 0xFFFFFF      # 选中注颜色 0x999999
+      font_point: 14                            # 候选字大小
+      hilited_candidate_back_color: 0x75B100    # 第一候选项背景色
+      hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
+      label_font_point: 12                      # 候选编号大小
+      label_color: 0x999999                     # 序号颜色
+      hilited_label_color: 0xFFFFFF             # 序号颜色
+      hilited_candidate_label_color: 0xFFFFFF   # 选中序号颜色
+      inline_preedit: true                      # 拼音位于： 候选框 false | 行内 true
+      text_color: 0x424242                      # 拼音行文字颜色（inline_preedit: false）
+      hilited_text_color: 0xFFFFFF              # 选中拼音颜色 （inline_preedit: false）
+      hilited_back_color: 0x75B100              # 选中拼音底色 （inline_preedit: false）
+      shadow_color: 0x30000000                  # 阴影颜色，新版小狼毫 CI 更改了绘制，若无法看到阴影，请更改为 000000，观察是否能正常绘制阴影
+
+    wechat_dark:
+      name: 微信键盘深色
+      back_color: 0x2e2925                      # 候选条背景色
+      border_color: 0x2e2925                    # 外边框颜色
+      border: 2                                 # 窗口外边框宽度
+      candidate_format: '%c %@ '  # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+      comment_text_color: 0x999999              # 拼音等提示文字颜色
+      font_point: 14                            # 候选字大小
+      hilited_candidate_back_color: 0x75B100    # 第一候选项背景色
+      hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
+      label_font_point: 12                      # 候选编号大小
+      text_color: 0x424242                      # 拼音行文字颜色
+      label_color: 0x999999                     # 预选栏编号颜色
+      candidate_text_color: 0xe9e9ea            # 预选项文字颜色
+      inline_preedit: true                      # 拼音位于： 候选框 false | 行内 true
+      shadow_color: 0x2e2925
+
+    rose_pine:
+      name: "Rosé Pine"
+      author: 0xffan
+      back_color: 0x2E1D1F
+      border_color: 0x2E1D1F
+      text_color: 0x866A6E
+      label_color: 0xD8866A6E
+      hilited_text_color: 0xD8F4DEE0
+      hilited_back_color: 0x2E1D1F
+      hilited_label_color: 0xB2F4DEE0
+      hilited_candidate_text_color: 0xF4DEE0
+      hilited_candidate_back_color: 0xD8926FEB
+      hilited_comment_text_color: 0x866A6E
+      candidate_text_color: 0xDAF4DEE0
+      comment_text_color: 0x866A6E
+      shadow_color: 0x866A6E
+
+    rose_pine_dawn:
+      name: "Rosé Pine Dawn"
+      author: 0xffan
+      shadow_color: 0x10000000
+      back_color: 0xF3FAFF
+      border_color: 0xF3FAFF
+      candidate_text_color: 0xD8795257
+      comment_text_color: 0xD8A59398
+      hilited_back_color: 0xF3FAFF
+      hilited_label_color: 0xD9A59398
+      hilited_candidate_back_color: 0xE1E9F2
+      hilited_candidate_text_color: 0xD87A63B4
+      hilited_text_color: 0xD8795257
+      hilited_comment_text_color:   0xDAA59398
+      text_color: 0xD9A59398
+      label_color: 0xD8A59398
+      shadow_color: 0xF3FAFF
