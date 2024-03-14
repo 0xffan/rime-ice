@@ -4,7 +4,7 @@
 
 ## 添加了两套皮肤
 
-[Rosé Pine](https://rosepinetheme.com/palette/) 配色
+[Rosé Pine](https://github.com/0xffan/rose-pine-rime) 主题配色
 
 ![preview](./others/custom_preview.png)
 
